@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Generating devOS rpm"
+cd spec
+rpmbuild --target noarch -ba utils.spec
