@@ -1,0 +1,50 @@
+name = "devOS"
+description = ""
+version = "0.0.4"
+modules = []
+groups = []
+
+
+[customizations.timezone]
+timezone = "Europe/Berlin"
+
+[customizations.services]
+enabled = ["cockpit"]
+
+
+[[packages]]
+name = "cockpit"
+version = "*"
+
+[[packages]]
+name = "cockpit-podman"
+version = "*"
+
+[[packages]]
+name = "openssh"
+version = "*"
+
+[[packages]]
+name = "openssh-clients"
+version = "*"
+
+[[packages]]
+name = "openssh-server"
+version = "*"
+
+[customizations]
+hostname = "devOS"
+
+[[customizations.user]]
+name = "bastian"
+description = "root"
+password = "$6$1aM/UCLiB5b5yOO4$/42ZndrfTkSEwM8ma"
+
+[[repos.git]]
+rpmname = "devOS"
+rpmversion = "0.1"
+rpmrelease = "1"
+summary = "devOS"
+repo = "https://github.com/uid0-eu/devOS-files"
+ref = "origin/master"
+destination = "SERVICES"
