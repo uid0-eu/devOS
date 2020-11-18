@@ -3,5 +3,6 @@ rm -rf ~/rpmbuild
 echo "Generating devOS rpm"
 cd spec
 rpmbuild --target noarch -ba utils.spec
-
+cd ..
+cp ~/rpmbuild/RPMS/noarch/*.rpm RPM/
 #cp ~/rpmbuild/SRPMS/*.rpm ../../rpms/

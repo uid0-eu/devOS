@@ -1,4 +1,7 @@
 #!/bin/bash
+rm -rf ~/rpmbuild
 echo "Generating devOS rpm"
 cd spec
 rpmbuild --target noarch -ba utils.spec
+
+#cp ~/rpmbuild/SRPMS/*.rpm ../../rpms/
