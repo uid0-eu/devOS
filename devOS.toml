@@ -4,12 +4,23 @@ version = "0.0.5"
 modules = []
 groups = []
 
+[customizations]
+hostname = "devOS"
+
+[customizations.timezone]
+timezone = "Europe/Berlin"
+
+
 [[packages]]
 name = "epel-release"
 version = "*"
 
 [[packages]]
-name = "anaconda"
+name = "htop"
+version = "*"
+
+[[packages]]
+name = "python3-ifcfg"
 version = "*"
 
 [[packages]]
@@ -38,8 +49,3 @@ version = "*"
 
 
 
-[customizations]
-hostname = "devOS"
-
-[customizations.timezone]
-timezone = "Europe/Berlin"

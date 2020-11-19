@@ -1,8 +1,12 @@
 name = "devOS"
 description = "devOS"
-version = "0.0.5"
+version = "0.0.6"
 modules = []
 groups = []
+
+[[packages]]
+name = "anaconda"
+version = "*"
 
 [[packages]]
 name = "devOS"
