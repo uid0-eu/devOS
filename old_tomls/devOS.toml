@@ -5,19 +5,19 @@ modules = []
 groups = []
 
 [[packages]]
+name = "devOS"
+version = "*"
+
+[[packages]]
 name = "epel-release"
 version = "*"
 
 [[packages]]
-name = "anaconda"
+name = "epel-release"
 version = "*"
 
 [[packages]]
 name = "nmap"
-version = "*"
-
-[[packages]]
-name = "devOS"
 version = "*"
 
 [[packages]]
@@ -31,12 +31,6 @@ version = "*"
 [[packages]]
 name = "rsync"
 version = "*"
-
-[[packages]]
-name = "epel-release"
-version = "*"
-
-
 
 [customizations]
 hostname = "devOS"
