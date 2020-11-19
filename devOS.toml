@@ -49,7 +49,7 @@ languages = ["de_DE.UTF-8"]
 keyboard = "de"
 
 [customizations.services]
-enabled = ["cockpit.socket","httpd"]
+enabled = ["httpd"]
 disabled = ["kdump"]
 
 [customizations.firewall]
