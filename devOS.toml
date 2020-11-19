@@ -7,9 +7,12 @@ groups = []
 [customizations]
 hostname = "devOS"
 
-
 [[packages]]
 name = "nmap"
+version = "*"
+
+[[packages]]
+name = "rsync"
 version = "*"
 
 [[packages]]
