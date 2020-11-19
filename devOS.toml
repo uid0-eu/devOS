@@ -10,6 +10,10 @@ hostname = "devOS"
 [customizations.timezone]
 timezone = "Europe/Berlin"
 
+[customizations.locale]
+languages = ["de_DE.UTF-8"]
+keyboard = "de"
+
 
 [[packages]]
 name = "epel-release"
