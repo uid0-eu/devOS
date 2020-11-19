@@ -1,6 +1,6 @@
 name = "devOS"
 description = "devOS"
-version = "0.0.7"
+version = "0.0.8"
 modules = []
 groups = []
 
@@ -47,7 +47,7 @@ languages = ["de_DE.UTF-8"]
 keyboard = "de"
 
 [customizations.services]
-enabled = ["cockpit.socket", "httpd"]
+enabled = ["httpd"]
 disabled = ["kdump"]
 
 [customizations.firewall]
