@@ -1,0 +1,40 @@
+[customizations.timezone]
+timezone = "Europe/Berlin"
+
+[customizations.locale]
+languages = ["de_DE.UTF-8"]
+keyboard = "de"
+
+
+[customizations.services]
+enabled = ["cockpit.socket","httpd"]
+disabled = ["kdump"]
+[customizations.timezone]
+timezone = "Europe/Berlin"
+
+[customizations.locale]
+languages = ["de_DE.UTF-8"]
+keyboard = "de"
+
+[customizations.services]
+enabled = ["cockpit.socket","httpd"]
+disabled = ["kdump"]
+
+[customizations.firewall]
+ports = ["22:tcp", "80:tcp"]
+
+[[packages]]
+name = ["htop"]
+version = "*"
+
+[[packages]]
+name = ["grub2-pc"]
+version = "*"
+
+[[packages]]
+name = ["httpd"]
+version = "*"
+
+[[packages]]
+name = "python3-ifcfg"
+version = "*"

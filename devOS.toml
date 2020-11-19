@@ -1,39 +1,12 @@
 name = "devOS"
 description = "devOS"
-version = "0.0.5"
+version = "0.0.7"
 modules = []
 groups = []
 
 [customizations]
 hostname = "devOS"
 
-[customizations.timezone]
-timezone = "Europe/Berlin"
-
-[customizations.locale]
-languages = ["de_DE.UTF-8"]
-keyboard = "de"
-
-[customizations.firewall]
-ports = ["22:tcp", "80:tcp"]
-
-[customizations.services]
-enabled = ["cockpit.socket", "httpd"]
-disabled = ["kdump"]
-
-
-
-[[packages]]
-name = "epel-release"
-version = "*"
-
-[[packages]]
-name = ["htop","httpd"]
-version = "*"
-
-[[packages]]
-name = "python3-ifcfg"
-version = "*"
 
 [[packages]]
 name = "nmap"
@@ -48,16 +21,37 @@ name = "openssh"
 version = "*"
 
 [[packages]]
-name = "openssh-server"
+name = "grub2-pc"
 version = "*"
 
 [[packages]]
-name = "rsync"
+name = "htop"
+version = "*"
+
+[[packages]]
+name = "python3-ifcfg"
+version = "*"
+
+
+[[packages]]
+name = "httpd"
 version = "*"
 
 [[packages]]
 name = "epel-release"
 version = "*"
 
+[customizations.timezone]
+timezone = "Europe/Berlin"
 
+[customizations.locale]
+languages = ["de_DE.UTF-8"]
+keyboard = "de"
+
+[customizations.services]
+enabled = ["cockpit.socket","httpd"]
+disabled = ["kdump"]
+
+[customizations.firewall]
+ports = ["22:tcp", "80:tcp"]
 

@@ -6,7 +6,7 @@
 #
 Summary: devOS mods
 Name: devOS
-Version: 0.0.2
+Version: 0.0.3
 Release: 1
 License: GPL
 URL: https://devOS.uid0.eu
