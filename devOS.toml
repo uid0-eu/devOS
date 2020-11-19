@@ -14,13 +14,21 @@ timezone = "Europe/Berlin"
 languages = ["de_DE.UTF-8"]
 keyboard = "de"
 
+[customizations.firewall]
+ports = ["22:tcp", "80:tcp"]
+
+[customizations.services]
+enabled = ["cockpit.socket", "httpd"]
+disabled = ["kdump"]
+
+
 
 [[packages]]
 name = "epel-release"
 version = "*"
 
 [[packages]]
-name = "htop"
+name = ["htop","httpd"]
 version = "*"
 
 [[packages]]

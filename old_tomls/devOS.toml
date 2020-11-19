@@ -1,6 +1,6 @@
 name = "devOS"
 description = "devOS"
-version = "0.0.6"
+version = "0.0.5"
 modules = []
 groups = []
 
