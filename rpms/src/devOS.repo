@@ -1,0 +1,5 @@
+[devOS]
+name=devOS
+baseurl=http://10.2.2.12/REPO/
+enabled=1
+gpgcheck=0
