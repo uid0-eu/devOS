@@ -1,7 +1,7 @@
 rsync -aAXv / --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} /mnt
 rm /mnt/etc/fstab
-genfstab -U /mnt >> /mnt/etc/fstab
-
+bash /root/genfstab -U /mnt >> /mnt/etc/fstab
+exit 0
 arch-chroot /mnt pacman -Sy --noconfirm linux
 arch-chroot /mnt grub-install /dev/sda
 arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
