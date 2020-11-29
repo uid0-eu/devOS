@@ -6,7 +6,7 @@
 #
 Summary: devOS mods
 Name: devOS
-Version: 0.0.9
+Version: 0.1.1
 Release: 1
 License: GPL
 URL: https://devOS.uid0.eu
@@ -17,6 +17,7 @@ Requires: nano
 Requires: epel-release
 Requires: yum-utils
 Requires: python3-ifcfg
+Requires: glances
 BuildRoot: /root/rpmbuilds
 # Build with the following syntax:
 # rpmbuild --target noarch -bb utils.spec
@@ -31,10 +32,12 @@ RPM to mod CentOS to devOS
 ################################################################################
 echo "BUILDROOT = $RPM_BUILD_ROOT"
 mkdir -p $RPM_BUILD_ROOT/root
+mkdir -p $RPM_BUILD_ROOT/etc/yum.repos.d
 
 #mkdir -p $RPM_BUILD_ROOT/usr/local/share/utils
 #/data/devOS/src/devOS/SRC
 cp  ~/rpmbuild/src/root/* $RPM_BUILD_ROOT/root/
+cp  ~/rpmbuild/src/etc/yum.repos.d/* $RPM_BUILD_ROOT/etc/yum.repos.d/
 
 #cp -r ../SRC  $RPM_BUILD_ROOT/
 #cp /home/student/development/scripts/* $RPM_BUILD_ROOT/root/binda
