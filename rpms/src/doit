@@ -1,5 +1,6 @@
 #!/bin/bash
 rm -rf ~/rpmbuild
+rm -rf REPO/*
 mkdir -p  ~/rpmbuild  
 echo "Generating devOS rpm"
 cp -r devOS/* ~/rpmbuild/

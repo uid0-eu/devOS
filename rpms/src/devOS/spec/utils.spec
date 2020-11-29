@@ -6,7 +6,7 @@
 #
 Summary: devOS mods
 Name: devOS
-Version: 0.0.4
+Version: 0.0.9
 Release: 1
 License: GPL
 URL: https://devOS.uid0.eu
@@ -14,6 +14,9 @@ Group: System
 Packager: BB
 Requires: bash
 Requires: nano
+Requires: epel-release
+Requires: yum-utils
+Requires: python3-ifcfg
 BuildRoot: /root/rpmbuilds
 # Build with the following syntax:
 # rpmbuild --target noarch -bb utils.spec
