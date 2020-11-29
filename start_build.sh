@@ -3,10 +3,9 @@
 check=$(composer-cli compose status  | grep -c RUNNING)
 
 if [ $check -gt 0 ]; then
-echo "Build already running..."
-
-composer-cli compose status
-exit 1
+    echo "Build already running..."
+    composer-cli compose status
+    exit 1
 fi
 
 cd old_tomls

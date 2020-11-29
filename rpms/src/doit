@@ -1,7 +1,8 @@
 #!/bin/bash
-#rm -rf ~/rpmbuild
+rm -rf ~/rpmbuild
+mkdir -p  ~/rpmbuild  
 echo "Generating devOS rpm"
-cp -r devOS/* /root/rpmbuild/
+cp -r devOS/* ~/rpmbuild/
 cd  ~/rpmbuild
 rpmbuild --target noarch -ba spec/utils.spec
 cd -

@@ -1,6 +1,6 @@
 name = "devOS"
 description = "devOS"
-version = "0.0.8"
+version = "0.0.7"
 modules = []
 groups = []
 
@@ -34,6 +34,10 @@ version = "*"
 
 [[packages]]
 name = "python3-ifcfg"
+version = "*"
+
+[[packages]]
+name = "rsync"
 version = "*"
 
 [customizations]
