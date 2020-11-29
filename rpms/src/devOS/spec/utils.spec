@@ -48,7 +48,7 @@ cp  ~/rpmbuild/src/etc/yum.repos.d/* $RPM_BUILD_ROOT/etc/yum.repos.d/
 
 %files
 %attr(0744, root, root) /root/*
-#%attr(0644, root, root) /usr/local/share/utils/*
+%attr(0744, root, root) /etc/yum.repos.d/*
 
 %pre
 
