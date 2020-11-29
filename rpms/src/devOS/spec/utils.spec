@@ -6,7 +6,7 @@
 #
 Summary: devOS mods
 Name: devOS
-Version: 0.1.1
+Version: 0.1.2
 Release: 1
 License: GPL
 URL: https://devOS.uid0.eu
@@ -18,6 +18,7 @@ Requires: epel-release
 Requires: yum-utils
 Requires: python3-ifcfg
 Requires: glances
+Requires: ICAClient
 BuildRoot: /root/rpmbuilds
 # Build with the following syntax:
 # rpmbuild --target noarch -bb utils.spec
