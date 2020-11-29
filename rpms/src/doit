@@ -8,6 +8,7 @@ cd  ~/rpmbuild
 rpmbuild --target noarch -ba spec/utils.spec
 cd -
 cp  /root/rpmbuild/RPMS/noarch/devOS*.noarch.rpm REPO
+cp bin/* REPO
 createrepo REPO
 rsync  -r --delete REPO/* /var/www/html/REPO/ --progress
 
