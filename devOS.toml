@@ -57,4 +57,3 @@ disabled = ["kdump"]
 
 [customizations.firewall]
 ports = ["22:tcp", "80:tcp"]
-
