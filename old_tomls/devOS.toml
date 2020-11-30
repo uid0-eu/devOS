@@ -1,8 +1,7 @@
 name = "devOS"
 description = "devOS"
-version = "0.0.8"
+version = "0.0.7"
 modules = []
-groups = []
 
 [[packages]]
 name = "devOS"
@@ -39,6 +38,12 @@ version = "*"
 [[packages]]
 name = "rsync"
 version = "*"
+
+[[groups]]
+name = "gnome-desktop"
+
+[[groups]]
+name = "guest-desktop-agents"
 
 [customizations]
 hostname = "devOS"

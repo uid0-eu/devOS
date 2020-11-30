@@ -2,7 +2,80 @@ name = "devOS"
 description = "devOS"
 version = "0.0.7"
 modules = []
-groups = []
+
+
+#dnf grouplist --ids
+#yum group list hidden ids
+#   base-x (base-x)
+#   Container Management (container-management)
+#   Guest Desktop Agents (guest-desktop-agents)
+#   Internet Browser (internet-browser)
+#   Multimedia (multimedia)
+#   KVM platform specific packages (platform-kvm)
+#   Printing Client (print-client)
+#   Core (core)
+#   Fonts (fonts)
+#   GNOME (gnome-desktop)
+#   Hardware Monitoring Utilities (hardware-monitoring)
+#   Hardware Support (hardware-support)
+#   Headless Management (headless-management)
+#   Common NetworkManager submodules (networkmanager-submodules)
+#   Server product core (server-product)
+#   Standard (standard)
+
+
+[[groups]]
+name = "system-tools"
+
+[[groups]]
+name = "gnome-apps"
+
+
+[[groups]]
+name = "guest-agents"
+
+
+[[groups]]
+name = "smb-server"
+
+[[groups]]
+name = "graphical-admin-tools"
+
+[[groups]]
+name = "gnome-desktop"
+
+[[groups]]
+name = "guest-desktop-agents"
+
+[[groups]]
+name = "base-x"
+
+[[groups]]
+name = "container-management"
+
+[[groups]]
+name = "internet-browser"
+[[groups]]
+name = "multimedia"
+[[groups]]
+name = "platform-kvm"
+[[groups]]
+name = "print-client"
+[[groups]]
+name = "core"
+[[groups]]
+name = "fonts"
+[[groups]]
+name = "hardware-monitoring"
+[[groups]]
+name = "hardware-support"
+[[groups]]
+name = "networkmanager-submodules"
+[[groups]]
+name = "server-product"
+[[groups]]
+name = "standard"
+
 
 [customizations]
 hostname = "devOS"
